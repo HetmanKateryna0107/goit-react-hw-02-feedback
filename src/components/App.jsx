@@ -1,3 +1,8 @@
+import {Review} from './Review/Review';
+
+
+
+
 export const App = () => {
   return (
     <div
@@ -10,7 +15,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Review/>
     </div>
   );
 };
