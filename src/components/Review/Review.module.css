@@ -11,3 +11,6 @@
   .btn:not(:last-child){
     margin-right: 10px;
   }
+  .list{
+    list-style-type: none;
+  }
