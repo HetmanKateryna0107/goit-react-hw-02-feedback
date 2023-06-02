@@ -1,15 +1,18 @@
-import { Component } from 'react';
-
-export class FeeedbackOption extends Component {
-  render() {
+import PropTypes from "prop-types";
+export const FeeedbackOption=({options, onLeaveFeedback})=> {
     return (
       <div>
-        {this.props.options.map(option => (
-          <button key={option} onClick={this.props.onLeaveFeedback}>
+        {options.map(option => (
+          <button key={option} onClick={()=>onLeaveFeedback(option)}>
             {option}
           </button>
         ))}
       </div>
     );
-  }
+
+}
+FeeedbackOption.propTypes={
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.func,
+
 }
